@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B57E81D22593708006B0C06 /* ParkingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B57E81C22593708006B0C06 /* ParkingTableViewCell.swift */; };
 		5068263921BCD094000E4B94 /* SignUp_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068263821BCD094000E4B94 /* SignUp_VC.swift */; };
 		5068263B21BCD19D000E4B94 /* Home_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068263A21BCD19D000E4B94 /* Home_VC.swift */; };
 		5091C24821B758C500B442CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5091C24721B758C500B442CD /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B57E81C22593708006B0C06 /* ParkingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTableViewCell.swift; sourceTree = "<group>"; };
 		1E6EA37B748A863413CF4963 /* Pods-loginScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginScreen.release.xcconfig"; path = "Pods/Target Support Files/Pods-loginScreen/Pods-loginScreen.release.xcconfig"; sourceTree = "<group>"; };
 		235DB2F8CF2A6F260415B0CA /* Pods-loginScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginScreen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-loginScreen/Pods-loginScreen.debug.xcconfig"; sourceTree = "<group>"; };
 		5068263821BCD094000E4B94 /* SignUp_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_VC.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				50968FD821BDFF7F0006B711 /* GoogleService-Info.plist */,
 				5068263821BCD094000E4B94 /* SignUp_VC.swift */,
 				5068263A21BCD19D000E4B94 /* Home_VC.swift */,
+				1B57E81C22593708006B0C06 /* ParkingTableViewCell.swift */,
 			);
 			path = loginScreen;
 			sourceTree = "<group>";
@@ -174,22 +177,34 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-loginScreen/Pods-loginScreen-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-loginScreen/Pods-loginScreen-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-loginScreen/Pods-loginScreen-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loginScreen/Pods-loginScreen-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		51D62863C5F604B45C80425F /* [CP] Check Pods Manifest.lock */ = {
@@ -218,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5091C24A21B758C500B442CD /* Login_VC.swift in Sources */,
+				1B57E81D22593708006B0C06 /* ParkingTableViewCell.swift in Sources */,
 				5068263B21BCD19D000E4B94 /* Home_VC.swift in Sources */,
 				5091C24821B758C500B442CD /* AppDelegate.swift in Sources */,
 				5068263921BCD094000E4B94 /* SignUp_VC.swift in Sources */,
@@ -368,15 +384,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RCY4MRN3WN;
+				DEVELOPMENT_TEAM = 4R3A677WS4;
 				INFOPLIST_FILE = loginScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = App0.loginScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -387,15 +404,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RCY4MRN3WN;
+				DEVELOPMENT_TEAM = 4R3A677WS4;
 				INFOPLIST_FILE = loginScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = App0.loginScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

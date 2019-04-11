@@ -9,5 +9,6 @@ target 'loginScreen' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
 
 end
